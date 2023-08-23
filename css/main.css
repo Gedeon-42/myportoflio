@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.logo {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 16px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 17px;
+}
+nav ul li a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hello-section {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../image/portofoloio6.jpg);
+  height: 100vh;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 2%;
+  margin-top: 40px;
+}
+.hero-part h1 {
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 15%;
+}
+.hero-part h3 {
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.about-container {
+  background-color: pink;
+  display: flex;
+}
+.about-desc {
+  flex-basis: 50%;
+}
+.contact-details img {
+  width: 200px;
+  height: 200px;
+}
+.contact-details {
+  display: flex;
+}
+.about-content {
+  flex-basis: 50%;
+  border: 1px solid black;
+}
