@@ -120,11 +120,67 @@ color: white;
 }
 
 /* service part section */
+
+.service-section{
+  padding: 10px 70px;
+}
 .service-container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-column-gap: 12px;
+  grid-row-gap: 20px;
+
+}
+.service-content{
+  text-align: center;
+  padding: 20px 10px;
+  
 }
 .service-content img{
-width: 200px;
-height: 200px;
+width: 100px;
+height: 100px;
+}
+.textcenter{
+text-align: center;
+}
+.servicedesc{
+  margin: 12px 3px;
+}
+.centerdesc{
+  font-size: 18px;
+  margin-top: 7px;
+  text-transform: capitalize;
+}
+.portfolio-section{
+  padding: 10px 70px;
+  background-color: beige;
+}
+
+.portfolio-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-column-gap: 12px;
+  grid-row-gap: 16px;
+  margin-top: 10px;
+  
+}
+.portfolio-content{
+  
+  padding: 7px;
+}
+.portfolio-content img{
+  width: 100%;
+  height: 200px;
+  border-radius: 7px;
+}
+.portfolio-content h3{
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 7px;
+}
+.portfolio-content a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  margin-top: 5px;
 }
