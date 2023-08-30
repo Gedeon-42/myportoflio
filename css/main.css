@@ -35,6 +35,10 @@ nav ul li a {
   cursor: pointer;
   text-decoration: none;
 }
+.menu{
+  display: none;
+}
+
 .hello-section {
   background: 
     url(../image/portofoloio6.jpg);
@@ -229,15 +233,7 @@ text-align: center;
   margin: 20px 1px;
   color: rgba(0, 0, 0, 0.8);
 }
-.content2{
-  flex-basis: 48%;
-  margin-left: 10px;
-}
-.content2 h1{
-  font-size: 25px;
-  margin: 20px 1px;
-  color: rgba(0, 0, 0, 0.8)
-}
+
 form{
   display: flex;
   flex-direction: column;
@@ -248,8 +244,8 @@ form input{
   border:0.3px solid lightgray;
 }
 form button{
-  width: 35%;
-  padding: 16px;
+  width: 30%;
+  padding: 12px;
   border-radius: 30px;
   font-size: 20px;
   background-color: dodgerblue;
@@ -257,4 +253,66 @@ form button{
   outline: 0;
   border: 0;
 }
+.content2{
+  flex-basis: 48%;
+  margin-left: 10px;
+}
+
+.content2 h1{
+  font-size: 25px;
+  margin: 20px 1px;
+  color: rgba(0, 0, 0, 0.8)
+}
+.content2 p{
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 25px;
+}
+.social-desc{
+  display: flex;
+  margin-top: 20px;
+}
+.social-desc img{
+  width:25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.social-desc2{
+  display: flex;
+  margin-top: 20px;
+}
+.social-desc2 img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+  
+}
 /* resposiveness design */
+@media screen and (max-width:900px) {
+    
+    nav ul {
+      list-style-type: none;
+    }
+    nav ul li {
+      display: none;
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .logo{
+    font-size: 17px;
+    }
+    .menu{
+      display: block;
+    }
+    .list-menu2 ul li{
+      display: block;
+    }
+    .about-container{
+      display: block;
+    }
+    .footer-container{
+      display: block;
+    }
+}
