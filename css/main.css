@@ -3,28 +3,30 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
+  /* scroll-behavior: smooth; */
 }
-nav {
+
+header{
+  width: 100%;
+height: 80px;
+background-color: #11101b;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 100px;
+}
+.nav-bar ul {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 40px;
-  color: white;
-  background-color: rgb(0, 0, 0);
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  list-style-type: none;
+
 }
 .logo {
   font-size: 20px;
   text-transform: capitalize;
+  color: #fefefe;
 }
-nav ul {
-  list-style-type: none;
-}
-nav ul li {
-  display: inline-block;
+.nav-bar ul li {
+  display: block;
   margin-left: 16px;
   text-transform: capitalize;
   font-weight: bold;
@@ -48,14 +50,14 @@ nav ul li a {
   background-position: center;
   background-size: cover;
   padding-top: 2%;
-  margin-top: 40px;
+
 }
 .hero-part h1 {
   font-size: 26px;
   color: white;
   font-weight: bold;
   text-transform: capitalize;
-  margin-top: 15%;
+  margin-top: 20%;
 }
 .hero-part h3 {
   color: white;
@@ -288,31 +290,77 @@ form button{
   margin-right: 20px;
   
 }
+.scrolltop{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.scrolltop img{
+  width: 40px;
+  height: 40px;
+}
 /* resposiveness design */
 @media screen and (max-width:900px) {
-    
-    nav ul {
+
+  header{
+    padding: 0 30px;
+  }
+  .nav-bar{
+    position: absolute;
+    right: 0;
+    top: 80px;
+    background-color: #11101b;
+    left: 0;
+    width: 100vw;
+    transition: 0.5s;
+    height: 0px;
+    overflow: hidden;
+  }
+  .nav-bar.active{
+    height: 450px;
+  }
+    .nav-bar ul {
       list-style-type: none;
+      display: block;
+      width: fit-content;
+      margin: 80px auto 0 auto;
+      text-align: center;
+      opacity: 0;
+      transition: 0.2s;
     }
-    nav ul li {
-      display: none;
-      text-transform: capitalize;
-      font-weight: bold;
+    .nav-bar.active ul{
+      opacity: 1;
+    }
+    .nav-bar ul li {
+    
       font-size: 16px;
+      margin-bottom: 12px;
+      color: white;
+     
     }
     .logo{
     font-size: 17px;
     }
     .menu{
       display: block;
+      cursor: pointer;
     }
-    .list-menu2 ul li{
-      display: block;
-    }
+    
+   
     .about-container{
       display: block;
     }
     .footer-container{
       display: block;
+    }
+    form button{
+      width: 30%;
+      padding: 7px;
+      border-radius: 30px;
+      font-size: 16px;
+      background-color: dodgerblue;
+      color: white;
+      outline: 0;
+      border: 0;
     }
 }
