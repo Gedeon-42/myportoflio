@@ -98,6 +98,15 @@ nav ul li a:hover::after {
   color: white;
   font-size: 20px;
   text-transform: capitalize;
+  margin-bottom: 20px;
+  
+}
+.btn-hire{
+  color: white;
+  padding: 12px;
+  background-color: dodgerblue;
+  margin-top: 20px;
+  text-decoration: none;
 }
 
 .about-container {

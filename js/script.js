@@ -39,6 +39,6 @@ function sendEmail(){
         Subject : "New message from contact",
         Body : "And this is the body"
     }).then(
-      message => alert(message)
+      message => alert("message was sent successfully")
     );
 }
