@@ -28,16 +28,13 @@
           <li><a href="#service">service</a></li>
           <li><a href="#portofolio">work</a></li>
           <li><a href="">blog</a></li>
-          <li>
-            <a href="">dropdown</a>
-          </li>
           <li><a href="#footer">contact</a></li>
         </ul>
      
       </nav>
     </header>
       <div class="hero-part">
-        <h1>my name is umwizera gedeon</h1>
+        <h1>I am umwizera gedeon</h1>
         <h3>i am software developer</h3>
       </div>
     </section>
@@ -57,14 +54,14 @@
           <div class="skills">
             <h3>skills</h3>
             <div class="skills-desc">
-              <p>html</p>
+              <p >Laravel</p>
               <div class="skills-container">
                 <div class="html skills-bars"></div>
               </div><br>
             </div>
             
             <div class="skills-desc">
-              <p>CSS</p>
+              <p>Express</p>
               <div class="skills-container">
                 <div class="css skills-bars"></div>
               </div><br>
@@ -82,15 +79,15 @@
         <div class="about-content">
           <h1 class="h1-about">About me</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-            dolores in qui dolorem, sit hic! At, officiis laudantium nemo sed
-            iste a amet distinctio fuga mollitia eius illum quisquam expedita.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-            dolores in qui dolorem, sit hic! At, officiis laudantium nemo sed
-            iste a amet distinctio fuga mollitia eius illum quisquam expedita.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-            dolores in qui dolorem, sit hic! At, officiis laudantium nemo sed
-            iste a amet distinctio fuga mollitia eius illum quisquam expedita.
+             I am software developer located in kigali Rwanda who eager to contribute my 
+             softwre development skills in real world , i am able to devlop user friendly 
+             and mobile responsive website and systems
+             i have skill for many programing languages and ability to solve problem challenges. 
+             for frontend i have skill for htm , css and javascript frameworks like react, 
+             vue js and anguler and for Backend i am able to code in  different 
+             programming frameworks like Laravel for PHP ,django for Python and express for node js
+
+            
           </p>
         </div>
       </div>
@@ -126,29 +123,29 @@
       <h3><a href="https://umwizerwagedeon-todoapp.netlify.app/?">todo App</a></h3>
     </div>
     <div class="portfolio-content">
-      <img src="./image/react2.png" alt="">
-      <h3><a href="https://umwizerwagedeon-weatherapp.netlify.app/">weather App</a></h3>
+      <img src="./image/food1.jpg" alt="">
+      <h3><a href="https://umwizerwagedeon-weatherapp.netlify.app/">Food Menu  App</a></h3>
       
     </div>
     <div class="portfolio-content">
       <img src="./image/vuejs.png" alt="">
-      <h3>meal APi Project with vue and vuex</h3>
-      <a href="">visit</a>
+      <h3><a href="">meal APi Project with vue and vuex</a></h3>
+      
     </div>
     <div class="portfolio-content">
       <img src="./image/laptop1.jpg" alt="">
-      <h3>youtube home page clone</h3>
-      <a href="">visit</a>
+      <h3> <a href="">youtube home page clone</a></h3>
+      
     </div>
     <div class="portfolio-content">
       <img src="./image/nextjs.jpg" alt="">
-      <h3>blog with laravel next js</h3>
-      <a href="">visit</a>
+      <h3><a href="">blog with laravel next js</a></h3>
+      
     </div>
     <div class="portfolio-content">
-      <img src="./image/nextjs.jpg" alt="">
-      <h3>blog with laravel next js</h3>
-      <a href="">visit</a>
+      <img src="./image/javscript.jpg" alt="">
+      <h3><a href="">admin dashboard</a></h3>
+      
     </div>
   </div>
 </section>
@@ -162,12 +159,12 @@
   <div class="footer-container">
     <div class="content1">
       <h1>send us message</h1>
-      <form action="" method="post">
-        <input type="text" placeholder="your name">
-        <input type="text" placeholder="your email">
-        <input type="text" placeholder="subject">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button type="submit">send message</button>
+      <form  name="myForm"  onsubmit="sendEmail();reset;return false" method="post">
+        <input name="myName" id="name" type="text" placeholder="your name" required>
+        <input type="text" id="email" placeholder="your email" required>
+        <input type="text"  id="subject" placeholder="subject" required>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="send message"></textarea>
+        <button type="submit" value="submit">send</button>
       </form>
     </div>
     <div class="content2">
@@ -199,5 +196,6 @@
   </div>
 </section>
 <script src="./js/script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
