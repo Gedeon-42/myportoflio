@@ -153,8 +153,10 @@ width: 70%;
 /* service part section */
 
 .service-section{
-  padding: 10px 70px;
+  padding: 50px 70px;
   background-color: azure;
+  height: 80vh;
+  
 }
 .service-container{
   display: grid;
@@ -350,8 +352,33 @@ form button{
       display: block;
       cursor: pointer;
     }
+    .service-section{
+      height: 120vh;
+      padding: 10px;
+  
+    }
+
+    .service-container{
+      display: block
+      
+    }
+    .service-content{
+      text-align: center;
+      height: 200px;
+      padding: 20px 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 7px;
+      
+    }
+
+
+
+
+
+   .portfolio-section{
+    margin-top: 20px;
     
-   
+   }
     .about-container{
       display: block;
     }
@@ -359,7 +386,7 @@ form button{
       display: block;
     }
     form button{
-      width: 30%;
+      width: 20%;
       padding: 7px;
       border-radius: 30px;
       font-size: 16px;
