@@ -343,12 +343,12 @@ form button{
 @media screen and (max-width:900px) {
 
   header{
-    padding: 0 30px;
+    padding: 0 10px;
   }
   .nav-bar{
     position: absolute;
     right: 0;
-    top: 80px;
+    top: 40px;
     background-color: #11101b;
     left: 0;
     width: 100vw;
@@ -384,6 +384,7 @@ form button{
     .menu{
       display: block;
       cursor: pointer;
+      z-index: 1000!important;
     }
     .service-section{
       height: 120vh;
