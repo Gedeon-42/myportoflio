@@ -108,6 +108,10 @@ nav ul li a:hover::after {
   margin-top: 20px;
   text-decoration: none;
 }
+.about-section {
+  display: flex;
+  padding: 10px 40px;
+}
 
 .about-container {
   display: flex;
@@ -211,7 +215,11 @@ width: 70%;
   padding: 20px 10px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 7px;
+  transition: 0.5s;
   
+}
+.service-content:hover{
+  background-color:rgb(163, 195, 227);
 }
 .service-content img{
 width: 100px;
@@ -251,8 +259,23 @@ text-align: center;
   
 }
 .portfolio-content{
-  
   padding: 7px;
+  position: relative;
+  transition: 0.5s;
+}
+.pot-content-desc{
+  position: absolute;
+  bottom: 12%;
+  background-color: rgb(158, 153, 153);
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 20% 20px;
+  border-radius: 7px;
+  display: none;
+}
+.portfolio-content:hover .pot-content-desc{
+  display: block;
 }
 .portfolio-content img{
   width: 100%;
